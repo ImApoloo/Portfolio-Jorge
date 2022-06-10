@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.css">
+    <script src ="https://cdn.jsdelivr.net/npm/typelighterjs/typelighter.min.js"></script>
+    <script src="https://kit.fontawesome.com/85e4098246.js" crossorigin="anonymous"></script>
+    <title>Portfolio | Home</title>
+</head>
+<body>
+
+    <header>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <a id="home"></a>
+    <div id="fullpage">
+        <div class="section s1">
+            <div class="main_container">
+                <div class="text">
+                    <h1 id="title">Jorge Herrera</h1>
+                    <p class="text_abt_me">¡Hello! I'm a mexican junior Front-end developer, web designer and <br> I would like to <span class="typeWriter" data-text='["work with you!","gain new knowledge!","solve problems!"]'></span></p>
+                    <div class="buttons">
+                        <button class="btn btn1">LinkedIn <i class="fa-brands fa-linkedin"></i></button>
+                        <button class="btn btn2">Github <i class="fa-brands fa-github"></i></button>
+                    </div>
+                </div>
+                <img src="./assets/img/svgOrange.png" alt="" class="orangeImage">
+            </div>
+        </div>
+        <div class="section s2">
+            <a id="skills"></a>
+            <h1>Second Section</h1>
+        </div>
+        <div class="section s3">
+            <a id="contact"></a>
+            <h1>Third Section</h1>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullpage',{
+            autoscrolling:true,
+            navigation:true,
+            anchors:['section1', 'section2', 'section3'],
+        })
+    </script>
+</body>
+</html>
